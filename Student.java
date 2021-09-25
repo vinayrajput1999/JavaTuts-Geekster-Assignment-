@@ -31,5 +31,19 @@ public class Student {
 	public String getStudentCity() {
 		return this.studentCity;
 	}
-
+//	constructor example assignment
+	public Student(int studentId, String studentName, String studentClass, String studentCity) {
+		this.studentId = 101;
+		this.studentName = "Simran Yadav";
+		this.studentClass = "12th";
+		this.studentCity = "Delhi";
+		
+	}
+	public void show() {
+		System.out.println("student Id "+this.studentId);
+		System.out.println("student Name "+this.studentName);
+		System.out.println("student Class "+this.studentClass);
+		System.out.println("student City "+this.studentCity);
+	}
+	
 }
