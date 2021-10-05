@@ -1,0 +1,31 @@
+import java.util.*;
+public class HelloWorld { 
+    public static void main(String[] args) { 
+        int a=2;
+        int b=3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter addd or multiplyy : ");
+        String operator=sc.nextLine();
+        
+        if(operator=="addd"){ 
+            int sum = add(a,b);
+            System.out.println("sum = " +sum);
+            
+        } 
+        else if(operator=="multiplyy"){ 
+            int mul=multiply(a,b);
+            System.out.println(" mul ="+mul);
+        } 
+        else{ 
+            System.out.println("**enter correct operator**");
+        } 
+        
+    } 
+    public static int add(int a,int b){ 
+        return a+b;
+    } 
+    public static int multiply (int a,int b){
+        return a*b;
+    }
+    
+}
